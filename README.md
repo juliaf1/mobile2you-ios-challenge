@@ -3,16 +3,16 @@
 Este projeto foi desenvolvido como parte do teste de migração interna para a plataforma iOS da mobile2you - Dimensa.
 
 ## 🎯 Requisitos
-1. Usar algum design pattern: MVP, MVVM, MVVM-C, VIPER.
+1. Usar algum design pattern: MVP, MVVM, MVVM-C, VIPER. ✔️
 2. As informações do filme devem vir do endpoint getMovieDetails.
-3. Usar o vote_count que retorna da API para representar o número de likes.
+3. Usar o vote_count que retorna da API para representar o número de likes. ✔️
 4. Substituir o “3 of 10 watched” por “<popularity> views”, utilizando o valor retornado da API e
-mantendo algum ícone ao lado.
-5. O ícone de like (coração) deve mudar quando clicado, alternando entre preenchido e vazio.
-6. Deve haver uma lista de filmes abaixo dos detalhes.
-7. O app deve ser desenvolvido utilizando a linguagem Swift.
+mantendo algum ícone ao lado. ✔️
+5. O ícone de like (coração) deve mudar quando clicado, alternando entre preenchido e vazio. ✔️
+6. Deve haver uma lista de filmes abaixo dos detalhes. ✔️
+7. O app deve ser desenvolvido utilizando a linguagem Swift. ✔️
 8. O projeto deve ser disponibilizado em um repositório aberto no GitHub. Envie a URL assim que
-possível.
+possível. ✔️
   
 ## 👩‍💻 Implementação
 Usei MVVM como desgin pattern escolhido. As APIs utilizadas foram [Get Movie Details](https://developers.themoviedb.org/3/movies/get-movie-details) e [Get Similar Movies](https://developers.themoviedb.org/3/movies/get-similar-movies), no entanto, por dificuldades técnicas, não consegui utilizar Alamofire, nem fazer as requests dentro do aplicativo. Para solucionar este impeditivo técnico, utilizei o Postman para acessar a API e inclui manualmente as informações necessárias no ViewModel. Outro requisito que tive dificuldades e não consegui finalizar foi a manipulação de imagens com o photo path retornado pela API. Inclui o arquivo Pod em que tentei adicionar Alamofire e SDWebImageSwiftUI, ainda que não tenha connseguido utilizá-los no projeto. 
